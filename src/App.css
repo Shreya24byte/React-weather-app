@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,400&display=swap');
+*{
+  font-family: 'Roboto', sans-serif;
+}
+#container{
+  height: 1100px;
+  border-radius: 20px;
+}
+.sidebar{
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+  min-height: 140rem;
+}
+.sidenav p {
+  margin-top: 2rem;
+  color:#f5f5f5e5 ;
+  text-decoration: none;
+}
+.sidenav p:hover {
+  color: aliceblue;
+  cursor: pointer;
+  border-left: 5px solid aliceblue ;
+  text-decoration: none;
+}
+#card{
+  width: 18rem;
+  height: 25rem;
+}
+
+.user{
+  position: absolute;
+  left: 80%;
+}
+#logIn{
+  width: 50rem;
+}
+.filter span:hover{
+  color: rgb(18, 73, 190);
+  background-color: rgba(137,196,244,1);
+  cursor: pointer;
+}
+.navbar{
+  display: none;
+}
+@media(max-width:768px) {
+  * {
+      font-size: 1rem;
+      size: 0.5rem;
+  }
+  .sidebar{
+    display: none;
+  }
+  .navbar{
+    display:block;
+    height: 4rem;
+  }
+  #card{
+    width: 8rem;
+    height: 5rem;
+    font-size: 1rem;
+  }
+  #logIn{
+    width: 27rem;
+    margin-left: 5rem;
+    margin-top: 0rem;
+  }
+  .user-div{
+    position: relative;
+  }
+  .user{
+    position: absolute;
+    left: -25%;
+    bottom:220%;
+  }
+}
